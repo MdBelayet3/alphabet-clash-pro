@@ -16,21 +16,87 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-[#010313] font-poppins min-h-screen bg-[url('/images/background.png')] bg-no-repeat bg-center">
-   <main>
+<body class="font-poppins">
+   <main class="bg-[#010313] font-poppins min-h-screen bg-[url('/images/background.png')] bg-no-repeat bg-center">
+    <!-- home section -->
     <section class=" min-h-screen home text-white flex flex-col justify-center items-center">
         <h1 class="font-anton text-[140px] ">ALPHABET CLASH</h1>
         <p class="mb-14 text-[26px]">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
         <button class="btn bg-white text-black w-28">Play Now</button>
     </section>
-    <section class="play-ground">
 
+    <!-- play-ground start section -->
+    <section class="play-ground flex flex-col justify-center items-center hidden">
+        <!-- screen -->
+        <div class="artboard artboard-horizontal phone-6 border-[20px] border-[#010313CD] rounded-2xl bg-[#FFFFFFE3] my-11">
+            <div class=" flex justify-center text-white ">
+                <p class=" bg-[#010313CD] rounded-b-xl pb-4 px-6">Don't watch keyboard  while playing...</p>
+            </div>
+                <h1 class="text-9xl text-center mr-20">Y</h1>
+        </div>
+        <!-- keyboard -->
+        <div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">q</kbd>
+                <kbd class="kbd">w</kbd>
+                <kbd class="kbd">e</kbd>
+                <kbd class="kbd">r</kbd>
+                <kbd class="kbd">t</kbd>
+                <kbd class="kbd">y</kbd>
+                <kbd class="kbd">u</kbd>
+                <kbd class="kbd">i</kbd>
+                <kbd class="kbd">o</kbd>
+                <kbd class="kbd">p</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">a</kbd>
+                <kbd class="kbd">s</kbd>
+                <kbd class="kbd">d</kbd>
+                <kbd class="kbd">f</kbd>
+                <kbd class="kbd">g</kbd>
+                <kbd class="kbd">h</kbd>
+                <kbd class="kbd">j</kbd>
+                <kbd class="kbd">k</kbd>
+                <kbd class="kbd">l</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd">z</kbd>
+                <kbd class="kbd">x</kbd>
+                <kbd class="kbd">c</kbd>
+                <kbd class="kbd">v</kbd>
+                <kbd class="kbd">b</kbd>
+                <kbd class="kbd">n</kbd>
+                <kbd class="kbd">m</kbd>
+                <kbd class="kbd">/</kbd>
+              </div>
+        </div>
+        <!-- life and score -->
+        <div class="">
+            <button class="btn mt-11 mr-[700px]  rounded-[30px] bg-[#894189FF]  text-white ">
+                Life 
+                <img src="images/heart.svg" alt="">
+                1
+              </button>
+              <button class="btn rounded-[30px] bg-[#360490FF] text-white">
+               score
+               <img src="images/dollor.svg" alt="">
+               1
+              </button>
+        </div>
     </section>
-    <section class="score">
+    <!-- play-ground end section -->
 
+    <!-- score section -->
+    <section class="score flex justify-center items-center min-h-screen hidden">
+        <div class="flex flex-col justify-center items-center text-white gap-4 border-[#FFFFFF33] border-2 p-11 bg-gradient-to-r from-[#AF8AE5] to-[#5820B2] rounded-2xl">
+            <h1 class="text-6xl ">Score : 14</h1>
+            <button class="btn text-2xl">Play Again</button>
+            <p class="text-xl">Practice will make you Pro</p>
+        </div>
     </section>
    </main>
 
+   <script src="scripts/alpha-clash.js"></script>
 </body>
 
 </html>
