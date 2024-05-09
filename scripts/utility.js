@@ -22,6 +22,19 @@ function removeBGColorById(elementId){
     element.classList.remove('bg-[#FFA500]')
 } 
 
+//function for get inner text by id
+function getInnerTextById(elementId){
+    const element = document.getElementById(elementId);
+    const elementText = element.innerText;
+    return elementText;
+}
+
+//function for set inner text by id
+function setInnerTextById(elementId,value){
+    const element = document.getElementById(elementId);
+     element.innerText = value;
+}
+
 // function for generation a random alphabet
 function getARandomAlphabet(){
     //get or create alphabets array
@@ -37,3 +50,4 @@ function getARandomAlphabet(){
 
 
 }
+
